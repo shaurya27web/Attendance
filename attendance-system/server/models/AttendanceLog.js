@@ -1,0 +1,1 @@
+// Attendance log model placeholder

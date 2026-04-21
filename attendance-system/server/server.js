@@ -9,7 +9,13 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
 const app = express();
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://attendance-sable-tau.vercel.app"
+  ],
+  credentials: true
+}));
 app.use(express.json());
 
 // ─── DB Connect ───────────────────────────────────────────────

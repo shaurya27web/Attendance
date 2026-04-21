@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "/api",
+  baseURL: "https://attendance-hs72.onrender.com/api",
 });
 
 api.interceptors.request.use(function(config) {
